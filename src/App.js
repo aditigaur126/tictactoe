@@ -39,7 +39,8 @@ export default function Board() {
 
   return (
     <>
-      <div className="status">{status}</div>
+      <div className="heading">TICTACTOE</div>
+
       <div className="board-row">
         <Square value={square[0]} onSquareClick={() => handleClick(0)} />
         <Square value={square[1]} onSquareClick={() => handleClick(1)} />
@@ -55,6 +56,7 @@ export default function Board() {
         <Square value={square[7]} onSquareClick={() => handleClick(7)} />
         <Square value={square[8]} onSquareClick={() => handleClick(8)} />
       </div>
+      <div className="status">{status}</div>
     </>
   );
 }
